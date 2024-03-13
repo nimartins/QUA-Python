@@ -1,0 +1,6 @@
+sempre q baixar um arquivo: pip install flask
+
+para carregar:
+
+chaves duplas em python renderiza uma variavel
+

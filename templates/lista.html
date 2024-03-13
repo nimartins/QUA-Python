@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+
+    <style type="text/css">
+
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: .5rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>{{ descricao }}</h2>
+
+    <table>
+
+        <tr>
+            <th>Nome</th>
+            <th>Marca</th>
+            <th>Preço R$</th>
+        </tr>
+        <!-- cria um bloco -->      
+        {% for produto in lista_prod %}
+        <tr>
+            <td>{{ produto.nome }}</td>
+            <td>{{ produto.marca }}</td>
+            <td>{{ produto.preco }}</td>
+        </tr>            
+        {% endfor %}
+
+    </table>
+
+</body>
+
+</html>
