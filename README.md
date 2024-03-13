@@ -1,1 +1,1 @@
-# QUA-Python
+Projeto das aulas de Python.
